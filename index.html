@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+     <link href="/src/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rashid-portafolio</title>
+  </head>
+  <body class="h-screen">
+<header class="flex items-center justify-between py-2 px-6 border-b-2 border-[#FC3A79]">
+  <!-- Logo y links -->
+  <div class="flex items-center space-x-4">
+    <img src="Images/logo-portfolio2.png" class="w-[75px] md:w-[65px] lg:w-[60px] xl:w-[70px] h-auto" alt="imagen-logo">
+    <a class="hover:text-[#FC3A79] cursor-pointer">About me</a>
+    <a class="hover:text-[#FC3A79] cursor-pointer" >Contact</a>
+  </div>
+
+  <!-- Info derecha -->
+    <div  id="openMenu" class="block lg:hidden">
+      <svg width="30" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="#000000" d="M21 18H3v-2h18v2Zm0-5H3v-2h18v2Zm0-5H3V6h18v2Z"/>
+      </svg>
+    </div>
+      <div class="hidden lg:flex items-center space-x-4">
+    <a class="text-[#FC3A79]">rashid.blacknessie@blacknessie.com</a>
+    <span class="font-semibold">(506)8629-0791</span>
+    <span class="px-6">|</span>
+    <a class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="auto" viewBox="0 0 24 24"><path fill="#000000" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584l-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+    <a class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="auto" viewBox="0 0 24 24"><path fill="#000000" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></a>
+    <a class="cursor-pointer"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="auto" viewBox="0 0 24 24" fill="#000000"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M9.096 21.25v-3.146a3.33 3.33 0 0 1 .758-2.115c-3.005-.4-5.28-1.859-5.28-5.798c0-1.666 1.432-3.89 1.432-3.89c-.514-1.13-.5-3.084.06-3.551c0 0 1.95.175 3.847 1.75c1.838-.495 3.764-.554 5.661 0c1.897-1.575 3.848-1.75 3.848-1.75c.558.467.573 2.422.06 3.551c0 0 1.432 2.224 1.432 3.89c0 3.94-2.276 5.398-5.28 5.798a3.33 3.33 0 0 1 .757 2.115v3.146"/><path d="M3.086 16.57c.163.554.463 1.066.878 1.496c.414.431.932.77 1.513.988a4.46 4.46 0 0 0 3.62-.216"/></g></svg></a>
+  </div>
+  <!-- MENU RESPONSIVE -->
+    <div id="mobileMenu" class="lg:hidden fixed top-0 right-0 h-full w-74 bg-white shadow-lg 
+                              translate-x-full transition-transform duration-300 z-50 flex flex-col p-6 space-y-6">
+
+      <button id="closeMenu" class="self-end text-3xl text-black hover:text-[#FC3A79] transition 
+         bg-transparent border-none outline-none p-0">
+        ✕
+      </button>
+
+      <a class="hover:text-[#FC3A79] text-lg">About me</a>
+      <a class="hover:text-[#FC3A79] text-lg">Contact</a>
+
+      <div class="pt-4 border-t">
+        <a class="text-[#FC3A79] block">rashid.blacknessie@blacknessie.com</a>
+        <span class="font-semibold">(506) 8629-0791</span>
+      </div>
+
+      <div class="flex gap-4 pt-4">
+        <!-- iconos iguales a los del header -->
+         <a class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="auto" viewBox="0 0 24 24"><path fill="#000000" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584l-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+    <a class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="auto" viewBox="0 0 24 24"><path fill="#000000" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></a>
+    <a class="cursor-pointer"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="auto" viewBox="0 0 24 24" fill="#000000"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M9.096 21.25v-3.146a3.33 3.33 0 0 1 .758-2.115c-3.005-.4-5.28-1.859-5.28-5.798c0-1.666 1.432-3.89 1.432-3.89c-.514-1.13-.5-3.084.06-3.551c0 0 1.95.175 3.847 1.75c1.838-.495 3.764-.554 5.661 0c1.897-1.575 3.848-1.75 3.848-1.75c.558.467.573 2.422.06 3.551c0 0 1.432 2.224 1.432 3.89c0 3.94-2.276 5.398-5.28 5.798a3.33 3.33 0 0 1 .757 2.115v3.146"/><path d="M3.086 16.57c.163.554.463 1.066.878 1.496c.414.431.932.77 1.513.988a4.46 4.46 0 0 0 3.62-.216"/></g></svg></a>
+      </div>
+    </div>
+
+</header>
+<main class="flex flex-col items-center text-center px-6 py-20 space-y-32">
+
+  <section class="flex flex-col items-center max-w-[800px] space-y-8">
+    <h3 class="font-light text-4xl sm:text-5xl md:text-6xl bg-gradient-to-r from-[#FE572E] to-[#FC3A79] bg-clip-text text-transparent">
+      Hey there, I'm Rashid
+    </h3>
+
+    <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight">
+      Front End Web Developer
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl text-gray-700 max-w-[600px] leading-relaxed">
+      I help businesses grow by crafting amazing web experiences.  
+      If you're looking for a developer that likes to get stuff done, let's talk.
+    </p>
+
+    <div class="flex items-center bg-gradient-to-r from-[#FE572E] to-[#FC3A79] px-8 py-4 rounded-full gap-2 cursor-pointer hover:opacity-90 transition shadow-lg">
+      <p class="text-white font-medium">See my work</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 20 20">
+        <path fill="#FFFFFF" fill-rule="evenodd"
+          d="M9.364.765c-.037 5.419-.078 10.936-.12 16.553a398914.9 398914.9 0 0 0-6.454-6.361c-.385-.312-.802-.221-1.067.035c-.248.24-.353.7.007 1.09c2.368 2.326 4.975 4.892 7.82 7.697a.794.794 0 0 0 .554.222a.745.745 0 0 0 .539-.222c2.726-2.75 5.287-5.335 7.683-7.755a.754.754 0 0 0-.055-1.032c-.371-.374-.885-.229-1.093 0a3545.93 3545.93 0 0 1-6.386 6.437c.041-5.609.08-11.163.117-16.664c0-.26-.212-.765-.767-.765s-.778.469-.778.765Z" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Sección "My Work" -->
+  <section class="flex flex-col items-center text-center md:w-[639px] space-y-4">
+    <h3 class="font-bold text-3xl lg:text-4xl">My Work</h3>
+    <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+      I specialize in website design and development, but I've also designed successful iOS and Android apps.
+    </p>
+  </section>
+
+
+</main>
+<section class="relative w-full overflow-hidden flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-28">
+  <!-- Fondo de color (60% del alto del contenedor) -->
+  <div class="absolute inset-x-0 top-0 h-[60%] bg-[#161B12] z-0"></div>
+
+  <!-- Imagen principal -->
+  <img
+    src="Images/Thevoidarchives-DT.png"
+    alt="computadora"
+    class=" shadow-black/30 rounded-2xl relative z-10 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[75%] h-auto transition-all duration-500"
+  />
+
+  <!-- Imagen secundaria -->
+  <img
+    src="Images/Thevoidarchives-ph.png"
+    alt="computadora"
+    class="absolute left-[60%] top-[58%] sm:left-[58%] md:left-[60%] lg:left-[62%]
+           -translate-x-1/2 -translate-y-1/2 
+           z-20 w-[23%] sm:w-[19%] md:w-[17%] lg:w-[18%] h-auto 
+           border-2 border-[#6DC923] rounded-md transition-all duration-500"
+  />
+</section>
+
+
+<section class="relative w-full overflow-hidden flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-28">
+  <div class="absolute inset-x-0 top-0 h-[60%] bg-[#C09000] z-0"></div>
+
+  <img
+    src="Images/samharlow-DT.png"
+    alt="computadora"
+    class=" rounded-2xl relative z-10 w-[88%] sm:w-[78%] md:w-[70%] lg:w-[74%] h-auto transition-all duration-500"
+  />
+
+  <img
+    src="Images/samharlow-PH.png"
+    alt="computadora"
+    class="absolute left-[60%] top-[63%] sm:left-[58%] md:left-[60%] lg:left-[62%]
+           -translate-x-1/2 -translate-y-1/2 
+           z-20 w-[23%] sm:w-[19%] md:w-[17%] lg:w-[18%] h-auto 
+           border-2 border-[#D7580C] rounded-md transition-all duration-500"
+  />
+</section>
+
+
+<section class="relative w-full overflow-hidden flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-28">
+  <div class="absolute inset-x-0 top-0 h-[60%] bg-[#0C1426] z-0"></div>
+
+  <img
+    src="Images/SpaceDT.png"
+    alt="computadora"
+    class=" rounded-2xl relative z-10 w-[92%] sm:w-[82%] md:w-[72%] lg:w-[75%] h-auto transition-all duration-500"
+  />
+
+  <img
+    src="Images/SpacePH.png"
+    alt="computadora"
+    class="absolute left-[60%] top-[59%] sm:left-[58%] md:left-[60%] lg:left-[62%]
+           -translate-x-1/2 -translate-y-1/2 
+           z-20 w-[23%] sm:w-[19%] md:w-[17%] lg:w-[18%] h-auto 
+           border-2 border-[#F1F1F1] rounded-md transition-all duration-500"
+  />
+</section>
+
+
+<section class="flex flex-col items-center justify-center min-h-screen gap-6 py-20 px-6 ">
+
+  <div class="max-w-2xl px-6">
+    <p class="text-center  text-2xl lg:text-4xl">
+      “Working with Rashid has been an absolute pleasure and we’ll definitely turn to his expertise for new projects.”
+    </p>
+  </div>
+
+  <!-- Contenedor centrado -->
+  <div class="relative flex items-center justify-center w-fit mt-6">
+    <!-- Imagen -->
+    <img 
+      src="Images/cliente.png" 
+      class="w-[70px] h-[70px] rounded-full object-cover shadow-md"
+    />
+
+    <!-- Ícono superpuesto (superposición más natural) -->
+    <div 
+      class="absolute -right-4 top-1/2 -translate-y-1/2 
+             bg-gray-200 rounded-full w-[70px] h-[70px] 
+             flex items-center justify-center shadow-md border border-white"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="#000000" d="M0 0v11.408h11.408V0zm12.594 0v11.408H24V0zM0 12.594V24h11.408V12.594zm12.594 0V24H24V12.594z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Nombre y puesto -->
+  <div class="flex flex-col items-center text-center mt-3">
+    <h3 class="font-bold text-lg">Pachita Guarito</h3>
+    <p class="text-gray-700 text-sm">Engineer at Microsoft</p>
+  </div>
+
+
+</section>
+<section class="flex flex-col justify-around items-start min-h-screen py-20 px-6 lg:px-24">
+  <div class="max-w-md space-y-6">
+    <p class="font-bold text-2xl lg:text-3xl">
+      I’m currently available for freelance work.
+    </p>
+        <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+          If you’re looking for a developer that likes to get stuff done, let’s talk.
+        </p>
+
+        <div class="flex justify-between items-center">
+        <a class="text-[#FC3A79]">rashid.blacknessie@blacknessie.com</a>
+
+        <span class="font-semibold">(506)8629-0791</span>
+        </div>
+  </div>
+  <div class="flex items-center bg-gradient-to-r from-[#FE572E] to-[#FC3A79] px-8 py-4 rounded-full gap-2 cursor-pointer hover:opacity-90 transition shadow-lg">
+      <p class="text-white font-medium">Got a project in mind? Let’s talk!</p>
+  </div>
+  
+</section>
+
+<footer class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 pt-2 pb-6 px-8 border-t-2 border-[#FC3A79] text-center md:text-left">
+
+  <!-- Copyright -->
+  <p class="text-gray-700 text-sm md:text-base">
+    (c) Copyright Rashid Arias Perez 2025. All rights reserved.
+  </p>
+
+  <!-- Links -->
+  <div class="flex flex-col md:flex-row items-center gap-3 md:gap-6">
+    <a href="#" class="hover:text-[#FC3A79] transition-colors">Privacy Policy</a>
+    <a href="#" class="hover:text-[#FC3A79] transition-colors">Terms & Conditions</a>
+  </div>
+
+  <!-- Socials -->
+  <div class="flex items-center gap-4">
+    <a href="#" aria-label="X">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <path fill="#000000" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584l-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+      </svg>
+    </a>
+    <a href="#" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+        <path fill="#000000" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/>
+      </svg>
+    </a>
+    <a href="#" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.096 21.25v-3.146a3.33 3.33 0 0 1 .758-2.115c-3.005-.4-5.28-1.859-5.28-5.798c0-1.666 1.432-3.89 1.432-3.89c-.514-1.13-.5-3.084.06-3.551c0 0 1.95.175 3.847 1.75c1.838-.495 3.764-.554 5.661 0c1.897-1.575 3.848-1.75 3.848-1.75c.558.467.573 2.422.06 3.551c0 0 1.432 2.224 1.432 3.89c0 3.94-2.276 5.398-5.28 5.798a3.33 3.33 0 0 1 .757 2.115v3.146"/>
+        <path d="M3.086 16.57c.163.554.463 1.066.878 1.496c.414.431.932.77 1.513.988a4.46 4.46 0 0 0 3.62-.216"/>
+      </svg>
+    </a>
+  </div>
+
+</footer>
+
+
+
+
+
+  </body>
+</html>
+<script>
+  const menu = document.getElementById("mobileMenu");
+  const openBtn = document.getElementById("openMenu");
+  const closeBtn = document.getElementById("closeMenu");
+
+  openBtn.addEventListener("click", () => {
+    menu.classList.remove("translate-x-full");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.add("translate-x-full");
+  });
+</script>
