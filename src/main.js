@@ -1,37 +1,14 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+// --- TU JAVASCRIPT REAL ---
+const menu = document.getElementById("mobileMenu");
+const openBtn = document.getElementById("openMenu");
+const closeBtn = document.getElementById("closeMenu");
 
-setupCounter(document.querySelector('#counter'))
+openBtn.addEventListener("click", () => {
+  menu.classList.remove("translate-x-full");
+});
 
-  const menu = document.getElementById("mobileMenu");
-  const openBtn = document.getElementById("openMenu");
-  const closeBtn = document.getElementById("closeMenu");
-
-  openBtn.addEventListener("click", () => {
-    menu.classList.remove("translate-x-full");
-  });
-
-  closeBtn.addEventListener("click", () => {
-    menu.classList.add("translate-x-full");
-  });
-
+closeBtn.addEventListener("click", () => {
+  menu.classList.add("translate-x-full");
+});
