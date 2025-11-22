@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 
-export default defineConfig({
-  base: "/portafolio/", // 👈 asegúrate que coincida EXACTO con el nombre del repo
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/portafolio/" : "/", 
   plugins: [
     tailwindcss(),
   ],
-});
+}));
