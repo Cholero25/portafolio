@@ -10,8 +10,8 @@
   <!-- Logo y links -->
   <div class="flex items-center space-x-4">
     <img src="Images/logo-portfolio2.png" class="w-[75px] md:w-[65px] lg:w-[60px] xl:w-[70px] h-auto" alt="imagen-logo">
-    <a class="hover:text-[#FC3A79] cursor-pointer" href="./aboutme.html">About me</a>
-    <a class="hover:text-[#FC3A79] cursor-pointer" >Contact</a>
+    <a class="hidden md:block hover:text-[#FC3A79] cursor-pointer" href="./aboutme.html">About me</a>
+    <a class="hidden md:block hover:text-[#FC3A79] cursor-pointer" >Contact</a>
   </div>
 
   <!-- Info derecha -->
@@ -29,10 +29,10 @@
     <a class="cursor-pointer"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="auto" viewBox="0 0 24 24" fill="#000000"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M9.096 21.25v-3.146a3.33 3.33 0 0 1 .758-2.115c-3.005-.4-5.28-1.859-5.28-5.798c0-1.666 1.432-3.89 1.432-3.89c-.514-1.13-.5-3.084.06-3.551c0 0 1.95.175 3.847 1.75c1.838-.495 3.764-.554 5.661 0c1.897-1.575 3.848-1.75 3.848-1.75c.558.467.573 2.422.06 3.551c0 0 1.432 2.224 1.432 3.89c0 3.94-2.276 5.398-5.28 5.798a3.33 3.33 0 0 1 .757 2.115v3.146"/><path d="M3.086 16.57c.163.554.463 1.066.878 1.496c.414.431.932.77 1.513.988a4.46 4.46 0 0 0 3.62-.216"/></g></svg></a>
   </div>
   <!-- MENU RESPONSIVE -->
-    <div id="mobileMenu" class="lg:hidden fixed top-0 right-0 h-full w-74 bg-white shadow-lg 
+    <div id="mobileMenu" class="lg:hidden fixed top-0 right-0 h-full w-80 bg-white shadow-lg 
                               translate-x-full transition-transform duration-300 z-50 flex flex-col p-6 space-y-6">
 
-      <button id="closeMenu" class="self-end text-3xl text-black hover:text-[#FC3A79] transition 
+      <button id="closeMenu" class="self-end text-4xl text-black hover:text-[#FC3A79] transition 
          bg-transparent border-none outline-none p-0">
         ✕
       </button>
@@ -197,7 +197,7 @@
           If you’re looking for a developer that likes to get stuff done, let’s talk.
         </p>
 
-        <div class="flex justify-between items-center">
+        <div class="flex flex-col items-start md:justify-between items-center">
         <a class="text-[#FC3A79]">rashid.blacknessie@blacknessie.com</a>
 
         <span class="font-semibold">(506)8629-0791</span>
