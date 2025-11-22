@@ -8,8 +8,8 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        about: resolve(__dirname, "pages/aboutme.html"),
+        main: resolve("index.html"),
+        about: resolve("aboutme.html"),
       },
     },
   },
