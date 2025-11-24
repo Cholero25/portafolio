@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => ({
       input: {
         main: resolve("index.html"),
         about: resolve("aboutme.html"),
+        contact: resolve("contact.html"),
       },
     },
   },
