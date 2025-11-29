@@ -90,9 +90,9 @@
 
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-  <img src="./Images/Carrucel Rashid.png" class="max-w-xs md:max-w-full w-full mx-auto h-auto rounded-sm aspect-[5/3]">
-  <img src="./Images/Carrucel Rashid2.png" class="max-w-xs md:max-w-full w-full mx-auto h-auto rounded-sm aspect-[5/3]">
-  <img src="./Images/Carrucel Rashid3.png" class="max-w-xs md:max-w-full w-full mx-auto h-auto rounded-sm aspect-[5/3]">
+  <img src="./Images/Carrucel Rashid.png" class="object-contain object-cover max-w-xs md:max-w-full w-full mx-auto h-auto rounded-sm aspect-[5/3]">
+  <img src="./Images/Carrucel Rashid2.png" class="object-contain object-cover max-w-xs md:max-w-full w-full mx-auto h-auto rounded-sm aspect-[5/3]">
+  <img src="./Images/Carrucel Rashid3.png" class="object-contain object-cover max-w-xs md:max-w-full w-full mx-auto h-auto rounded-sm aspect-[5/3]">
 
 </div>
 
@@ -236,18 +236,20 @@
 <div class="flex flex-col sm:flex-row justify-center items-center bg-gray-300 
 rounded-lg sm:rounded-full sm:max-w-2xl mx-auto p-3 sm:py-2 gap-2 sm:gap-0">
 
-  <div class="bg-gray-800 px-18 py-6 rounded-full text-gray-100 text-center w-full sm:w-auto">
+  <div id="devTab" class=" cursor-pointer bg-gray-800 px-18 py-6 rounded-full text-gray-100 text-center w-full sm:w-auto">
     <a>Tools I Use for Development</a>
   </div>
 
-  <div class="px-14 py-6 rounded-full text-center w-full sm:w-auto">
+
+    <div id="financeTab"
+    class="cursor-pointer px-14 py-6 rounded-full text-center w-full sm:w-auto">
     <a>Tools I Use for Financing</a>
   </div>
 
 </div>
 
 
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 mt-10">
+<div  id="devContent"  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 mt-10">
 
 
   <div class="grid grid-col justify-center bg-gray-200 p-4 gap-2">
@@ -277,7 +279,30 @@ rounded-lg sm:rounded-full sm:max-w-2xl mx-auto p-3 sm:py-2 gap-2 sm:gap-0">
 
 </div>
 
+
+<div  id="financeContent" class=" cursor-pointer hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 mt-10">
+
+  
+  <div class="grid place-items-center bg-gray-200 p-4 gap-2">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png" width="40">
+    <p class="font-bold">PayPal</p>
+  </div>
+
+  <div class="grid place-items-center bg-gray-200 p-4 gap-2">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" width="40">
+    <p class="font-bold">Excel</p>
+  </div>
+
+  <div class="grid place-items-center bg-gray-200 p-4 gap-2">
+    <img src="https://cdn-icons-png.flaticon.com/512/5969/5969125.png" width="40">
+    <p class="font-bold">Google Sheets</p>
+  </div>
+
+</div>
+
+
 </section>
+
 <section class="flex flex-col gap-10 items-start min-h-screen py-20 px-6 lg:px-24">
   <div class="max-w-md space-y-6 p-4">
     <p class="font-bold text-2xl lg:text-3xl">
@@ -336,6 +361,8 @@ rounded-lg sm:rounded-full sm:max-w-2xl mx-auto p-3 sm:py-2 gap-2 sm:gap-0">
   </div>
 
 </footer>
+
 <script type="module" src="/src/main.js"></script>
+
 </body>
 </html>

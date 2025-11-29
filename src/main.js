@@ -48,6 +48,31 @@ document.querySelectorAll(".accordion-header").forEach(header => {
   });
 });
 
+  document.addEventListener("DOMContentLoaded", () => {
+  const devTab = document.getElementById("devTab");
+  const financeTab = document.getElementById("financeTab");
+
+  const devContent = document.getElementById("devContent");
+  const financeContent = document.getElementById("financeContent");
+
+  devTab.addEventListener("click", () => {
+    devTab.classList.add("bg-gray-800", "text-gray-100");
+    financeTab.classList.remove("bg-gray-800", "text-gray-100");
+
+    devContent.classList.remove("hidden");
+    financeContent.classList.add("hidden");
+  });
+
+  financeTab.addEventListener("click", () => {
+    financeTab.classList.add("bg-gray-800", "text-gray-100");
+    devTab.classList.remove("bg-gray-800", "text-gray-100");
+
+    financeContent.classList.remove("hidden");
+    devContent.classList.add("hidden");
+  });
+});
+
+
   document.getElementById("sendBtn").addEventListener("click", () => {
     
     const name = document.getElementById("name").value;
@@ -74,3 +99,4 @@ ${details}
 
     window.open(url, "_blank"); 
   });
+
