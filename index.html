@@ -93,7 +93,7 @@
 
 
 </main>
-<a href="https://cholero25.github.io/The-Void-Archives/index.html" class="cursor-default"><section class="relative w-full overflow-hidden flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-28">
+<a id="mywork" href="https://cholero25.github.io/The-Void-Archives/index.html" class="cursor-default"><section class="relative w-full overflow-hidden flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-28">
   <!-- Fondo de color (60% del alto del contenedor) -->
   <div class="absolute inset-x-0 top-0 h-[60%] bg-[#161B12] z-0"></div>
 
@@ -187,29 +187,33 @@
   </div>
 
   <!-- Contenedor centrado -->
-  <div class="relative flex items-center justify-center w-fit mt-6">
-    <!-- Imagen -->
-    <img 
-      src="Images/cliente.png" 
-      class="w-[70px] h-[70px] rounded-full object-cover shadow-md"
-    />
+ <div class="relative w-fit mx-auto mt-6">
+  
+  <!-- Imagen principal -->
+  <img 
+    src="Images/cliente.png" 
+    class="w-20 h-20 rounded-full object-cover"
+  />
 
-    <!-- Ícono superpuesto (superposición más natural) -->
-    <div 
-      class="absolute -right-4 top-1/2 -translate-y-1/2 
-             bg-gray-200 rounded-full w-[70px] h-[70px] 
-             flex items-center justify-center shadow-md border border-white"
-    >
-      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Icono encima -->
+  <div 
+    class="absolute -right-4 -bottom-2 bg-gray-200 w-12 h-12 rounded-full flex items-center justify-center shadow-md"
+  >
+    <!-- Aquí va tu icono -->
+       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path fill="#000000" d="M0 0v11.408h11.408V0zm12.594 0v11.408H24V0zM0 12.594V24h11.408V12.594zm12.594 0V24H24V12.594z"/>
       </svg>
-    </div>
   </div>
 
+</div>
+
+
+
+
   <!-- Nombre y puesto -->
-  <div class="flex flex-col items-center text-center mt-3">
-    <h3 class="font-bold text-lg">Pachita Guarito</h3>
-    <p class="text-gray-700 text-sm">Engineer at Microsoft</p>
+  <div class="flex flex-col items-center text-center mt-3 gap-2">
+    <h3 class="font-bold text-xl">Pachita Guarito</h3>
+    <p class="text-gray-700 text-2xl">Engineer at Microsoft</p>
   </div>
 
 
@@ -236,7 +240,7 @@
   
 </section>
 
-<footer class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 pt-2 pb-6 px-8 border-t-2 border-[#FC3A79] text-center md:text-left">
+<footer class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 pt-2 pb-8 px-8 border-t-2 border-[#FC3A79] text-center md:text-left">
 
   <!-- Copyright -->
   <p class="text-gray-700 text-sm md:text-base">
